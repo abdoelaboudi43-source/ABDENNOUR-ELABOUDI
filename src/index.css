@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --studio-bg: #0a0c12;
+  --studio-card: #10141f;
+  --studio-card-subtle: #141926;
+  --studio-inset: #090b10;
+  --studio-border: #1e2538;
+  --studio-text: #f8fafc;
+  --studio-text-muted: #94a3b8;
+  --scrollbar-track: #11141c;
+  --scrollbar-thumb: #283042;
+  --scrollbar-thumb-hover: #3b465e;
+}
+
+body.theme-light {
+  --studio-bg: #f8fafc;
+  --studio-card: #ffffff;
+  --studio-card-subtle: #f1f5f9;
+  --studio-inset: #e2e8f0;
+  --studio-border: #cbd5e1;
+  --studio-text: #0f172a;
+  --studio-text-muted: #475569;
+  --scrollbar-track: #e2e8f0;
+  --scrollbar-thumb: #94a3b8;
+  --scrollbar-thumb-hover: #64748b;
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--studio-bg);
+    color: var(--studio-text);
+    user-select: none;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom sleek scrollbars for tracks and prompter */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Studio custom slider styling */
+input[type="range"] {
+  accent-color: #0284c7;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "VoxStudio Pro - Voice Over & Audio Editor",
+  "description": "Professional voice over recording, multi-track editing, DSP mastering, teleprompter, and podcast audio workstation.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
